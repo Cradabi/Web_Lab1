@@ -191,3 +191,11 @@ body {
       padding: 1rem;
     }
   }
+
+  .empty-cart {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666;
+    padding: 2rem 0;
+  }

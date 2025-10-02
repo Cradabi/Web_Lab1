@@ -19,5 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Спасибо! Ваш заказ успешно оформлен.");
   
       form.reset();
+
+      window.location.href = "index.html";
     });
   });

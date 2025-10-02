@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItemsContainer.innerHTML = "";
   
       if (cart.length === 0) {
-        cartItemsContainer.innerHTML = "<p>Корзина пуста.</p>";
+        cartItemsContainer.innerHTML = "<p class='empty-cart'>Корзина пуста.</p>";
         totalPriceElement.textContent = "0";
         return;
       }
