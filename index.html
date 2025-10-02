@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Магазин товаров</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог товаров</title>
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
 
@@ -12,152 +12,250 @@
     <h1>Интернет-магазин</h1>
     <nav>
       <a href="index.html">Каталог</a>
-      <a href="order.html">Оформить заказ</a>
+      <a href="cart.html">Корзина</a>
     </nav>
   </header>
 
   <main>
     <section>
       <h2>Каталог товаров</h2>
+
       <div class="product-list">
+
+        <!-- Пример карточек товара (15 штук вручную) -->
+
         <article class="product-card">
           <figure>
-            <img src="images/product1.jpg" alt="Товар 1">
+            <img src="images/product1.jpg" alt="Товар 1" />
             <figcaption>Товар 1</figcaption>
           </figure>
           <p>Цена: 1000 руб.</p>
-          <button>Добавить в корзину</button>
+          <button class="add-to-cart"
+                  data-id="1"
+                  data-name="Товар 1"
+                  data-price="1000"
+                  data-img="images/product1.jpg">
+            Добавить в корзину
+          </button>
         </article>
 
         <article class="product-card">
           <figure>
-            <img src="images/product2.jpg" alt="Товар 2">
+            <img src="images/product2.jpg" alt="Товар 2" />
             <figcaption>Товар 2</figcaption>
           </figure>
           <p>Цена: 1200 руб.</p>
-          <button>Добавить в корзину</button>
+          <button class="add-to-cart"
+                  data-id="2"
+                  data-name="Товар 2"
+                  data-price="1200"
+                  data-img="images/product2.jpg">
+            Добавить в корзину
+          </button>
         </article>
 
         <article class="product-card">
           <figure>
-            <img src="images/product3.jpg" alt="Товар 3">
+            <img src="images/product3.jpg" alt="Товар 3" />
             <figcaption>Товар 3</figcaption>
           </figure>
-          <p>Цена: 1300 руб.</p>
-          <button>Добавить в корзину</button>
+          <p>Цена: 900 руб.</p>
+          <button class="add-to-cart"
+                  data-id="3"
+                  data-name="Товар 3"
+                  data-price="900"
+                  data-img="images/product3.jpg">
+            Добавить в корзину
+          </button>
         </article>
 
         <article class="product-card">
-            <figure>
-              <img src="images/product4.jpg" alt="Товар 4">
-              <figcaption>Товар 4</figcaption>
-            </figure>
-            <p>Цена: 1000 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-  
-          <article class="product-card">
-            <figure>
-              <img src="images/product5.jpg" alt="Товар 5">
-              <figcaption>Товар 5</figcaption>
-            </figure>
-            <p>Цена: 1200 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-  
-          <article class="product-card">
-            <figure>
-              <img src="images/product6.jpg" alt="Товар 6">
-              <figcaption>Товар 6</figcaption>
-            </figure>
-            <p>Цена: 1300 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-
-          <article class="product-card">
-            <figure>
-              <img src="images/product7.jpg" alt="Товар 7">
-              <figcaption>Товар 7</figcaption>
-            </figure>
-            <p>Цена: 1000 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-  
-          <article class="product-card">
-            <figure>
-              <img src="images/product8.jpg" alt="Товар 8">
-              <figcaption>Товар 8</figcaption>
-            </figure>
-            <p>Цена: 1200 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-  
-          <article class="product-card">
-            <figure>
-              <img src="images/product9.jpg" alt="Товар 9">
-              <figcaption>Товар 3</figcaption>
-            </figure>
-            <p>Цена: 1300 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-
-          <article class="product-card">
-            <figure>
-              <img src="images/product10.jpg" alt="Товар 10">
-              <figcaption>Товар 10</figcaption>
-            </figure>
-            <p>Цена: 1000 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-  
-          <article class="product-card">
-            <figure>
-              <img src="images/product11.jpg" alt="Товар 11">
-              <figcaption>Товар 11</figcaption>
-            </figure>
-            <p>Цена: 1200 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-  
-          <article class="product-card">
-            <figure>
-              <img src="images/product12.jpg" alt="Товар 12">
-              <figcaption>Товар 12</figcaption>
-            </figure>
-            <p>Цена: 1300 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-
-          <article class="product-card">
-            <figure>
-              <img src="images/product13.jpg" alt="Товар 13">
-              <figcaption>Товар 13</figcaption>
-            </figure>
-            <p>Цена: 1000 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
-  
-          <article class="product-card">
-            <figure>
-              <img src="images/product14.jpg" alt="Товар 14">
-              <figcaption>Товар 14</figcaption>
-            </figure>
-            <p>Цена: 1200 руб.</p>
-            <button>Добавить в корзину</button>
-          </article>
+          <figure>
+            <img src="images/product4.jpg" alt="Товар 4" />
+            <figcaption>Товар 4</figcaption>
+          </figure>
+          <p>Цена: 1950 руб.</p>
+          <button class="add-to-cart"
+                  data-id="4"
+                  data-name="Товар 4"
+                  data-price="1950"
+                  data-img="images/product4.jpg">
+            Добавить в корзину
+          </button>
+        </article>
 
         <article class="product-card">
           <figure>
-            <img src="images/product15.jpg" alt="Товар 15">
-            <figcaption>Товар 15</figcaption>
+            <img src="images/product5.jpg" alt="Товар 5" />
+            <figcaption>Товар 5</figcaption>
+          </figure>
+          <p>Цена: 1600 руб.</p>
+          <button class="add-to-cart"
+                  data-id="5"
+                  data-name="Товар 5"
+                  data-price="1600"
+                  data-img="images/product5.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product6.jpg" alt="Товар 6" />
+            <figcaption>Товар 6</figcaption>
+          </figure>
+          <p>Цена: 990 руб.</p>
+          <button class="add-to-cart"
+                  data-id="6"
+                  data-name="Товар 6"
+                  data-price="990"
+                  data-img="images/product6.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product7.jpg" alt="Товар 7" />
+            <figcaption>Товар 7</figcaption>
+          </figure>
+          <p>Цена: 1100 руб.</p>
+          <button class="add-to-cart"
+                  data-id="7"
+                  data-name="Товар 7"
+                  data-price="1100"
+                  data-img="images/product7.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product8.jpg" alt="Товар 8" />
+            <figcaption>Товар 8</figcaption>
+          </figure>
+          <p>Цена: 1400 руб.</p>
+          <button class="add-to-cart"
+                  data-id="8"
+                  data-name="Товар 8"
+                  data-price="1400"
+                  data-img="images/product8.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product9.jpg" alt="Товар 9" />
+            <figcaption>Товар 9</figcaption>
+          </figure>
+          <p>Цена: 2500 руб.</p>
+          <button class="add-to-cart"
+                  data-id="9"
+                  data-name="Товар 9"
+                  data-price="2500"
+                  data-img="images/product9.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product10.jpg" alt="Товар 10" />
+            <figcaption>Товар 10</figcaption>
+          </figure>
+          <p>Цена: 1750 руб.</p>
+          <button class="add-to-cart"
+                  data-id="10"
+                  data-name="Товар 10"
+                  data-price="1750"
+                  data-img="images/product10.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <!-- Оставшиеся карточки 11–15 -->
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product11.jpg" alt="Товар 11" />
+            <figcaption>Товар 11</figcaption>
+          </figure>
+          <p>Цена: 1990 руб.</p>
+          <button class="add-to-cart"
+                  data-id="11"
+                  data-name="Товар 11"
+                  data-price="1990"
+                  data-img="images/product11.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product12.jpg" alt="Товар 12" />
+            <figcaption>Товар 12</figcaption>
+          </figure>
+          <p>Цена: 1880 руб.</p>
+          <button class="add-to-cart"
+                  data-id="12"
+                  data-name="Товар 12"
+                  data-price="1880"
+                  data-img="images/product12.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product13.jpg" alt="Товар 13" />
+            <figcaption>Товар 13</figcaption>
           </figure>
           <p>Цена: 2100 руб.</p>
-          <button>Добавить в корзину</button>
+          <button class="add-to-cart"
+                  data-id="13"
+                  data-name="Товар 13"
+                  data-price="2100"
+                  data-img="images/product13.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product14.jpg" alt="Товар 14" />
+            <figcaption>Товар 14</figcaption>
+          </figure>
+          <p>Цена: 1850 руб.</p>
+          <button class="add-to-cart"
+                  data-id="14"
+                  data-name="Товар 14"
+                  data-price="1850"
+                  data-img="images/product14.jpg">
+            Добавить в корзину
+          </button>
+        </article>
+
+        <article class="product-card">
+          <figure>
+            <img src="images/product15.jpg" alt="Товар 15" />
+            <figcaption>Товар 15</figcaption>
+          </figure>
+          <p>Цена: 2300 руб.</p>
+          <button class="add-to-cart"
+                  data-id="15"
+                  data-name="Товар 15"
+                  data-price="2300"
+                  data-img="images/product15.jpg">
+            Добавить в корзину
+          </button>
         </article>
 
       </div>
+
     </section>
   </main>
 
+  <script src="scripts/main.js"></script>
 </body>
 </html>
