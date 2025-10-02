@@ -18,16 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
       cart.forEach((item, index) => {
         total += item.price;
   
-        const card = document.createElement("div");
-        card.className = "cart-item";
+        const card = document.createElement("article");
+        card.className = "product-card";
   
         card.innerHTML = `
-          <img src="${item.img}" alt="${item.name}">
-          <div class="cart-item-info">
-            <p><strong>${item.name}</strong></p>
-            <p>Цена: ${item.price} руб.</p>
-            <button class="remove-btn" data-index="${index}">Удалить</button>
-          </div>
+          <figure>
+            <img src="${item.img}" alt="${item.name}">
+            <figcaption>${item.name}</figcaption>
+          </figure>
+          <p>Цена: ${item.price} руб.</p>
+          <button class="remove-btn" data-index="${index}">Удалить</button>
         `;
   
         cartItemsContainer.appendChild(card);
@@ -35,7 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
       totalPriceElement.textContent = total;
     }
-
+  
+    // Удаление товара по кнопке
     cartItemsContainer.addEventListener("click", (e) => {
       if (e.target.classList.contains("remove-btn")) {
         const index = e.target.dataset.index;

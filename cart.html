@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Корзина</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
 
@@ -16,16 +16,22 @@
     </nav>
   </header>
 
-  <main class="cart-container">
-    <section id="cart-items">
-    </section>
+  <main>
+    <section>
+      <h2>Товары в корзине</h2>
 
-    <aside class="cart-summary">
-      <p>Итоговая сумма: <span id="total-price">0</span> руб.</p>
-      <a href="order.html">
-        <button id="checkout-btn">Оформить заказ</button>
-      </a>
-    </aside>
+      <!-- Используем .product-list и .product-card -->
+      <div class="product-list" id="cart-items">
+        <!-- карточки будут добавляться из JS -->
+      </div>
+
+      <div class="cart-summary">
+        <p>Итоговая сумма: <span id="total-price">0</span> руб.</p>
+        <a href="order.html">
+          <button id="checkout-btn">Оформить заказ</button>
+        </a>
+      </div>
+    </section>
   </main>
 
   <script src="scripts/cart.js"></script>
